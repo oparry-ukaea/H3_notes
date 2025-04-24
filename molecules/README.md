@@ -15,3 +15,6 @@
 3. Test in 1D and compare to DIV1D (sims will be provided; maybe [here??](https://zenodo.org/records/15236644)).
 4. Test in 2D and compare to SOLPS-ITER (sims will be provided).
 5. Option to use linearised reactions - huge potential speedup.
+
+
+[Which reactions are in which code](reactions.md)
