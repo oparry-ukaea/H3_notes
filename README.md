@@ -1,2 +1,3 @@
-# H3_notes
-Notes on Hermes-3 work
+# Hermes-3
+
+[Molecules notes](./molecules/README.md)
