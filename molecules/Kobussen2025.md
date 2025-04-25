@@ -252,14 +252,3 @@ MAR/MAD:
   * SOLPS-ITER sims show high molecular density in divertor region [this paper; preprint!]
   * DIV1D without molecules struggles to model the MAST-U SOL [5](https://dx.doi.org/10.1088/1361-6587/ad2e37)
   * SD1D uses neutral energy equation and molecular momentum and energy equations [[7]](https://dx.doi.org/10.1088/1361-6587/ac6827)
-
-# Defs
-
-* Common flux region (CFR):
-* Private flux region (PFR):
-* Stagnation point
-  * Around the midplane in the SOL?
-* Divertor baffles aims to
-  * enhance the containment of neutral particles within the divertor region (minimizie the number of neutral particles returning to the core)
-  * reduce the pressure at the target, improving power exhaust and reducing the target heat load
-  * reduces unwanted coupling between the divertor and the core plasma
