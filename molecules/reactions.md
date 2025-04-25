@@ -1,8 +1,6 @@
+# Reactions
 
-
-## Deuterium
-
-SD1D and UEDGE papers presents Hydrogenic rates - can they just use mass-rescaling for D?
+SD1D and UEDGE papers presents H rates - assume they just use mass-rescaling for D?
 
 | Reaction                                   | Notes                                        | DIV1D (Kobussen25) | SD1D | SOLPS | UEDGE | Hermes-3 | EIRENE database      |
 | ------------------------------------------ | -------------------------------------------- | ------------------ | ---- | ----- | ----- | -------- | -------------------- |
