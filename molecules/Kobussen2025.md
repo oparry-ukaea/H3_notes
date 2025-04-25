@@ -1,24 +1,13 @@
-# DIV1D
 
-## Sections
+# DIV1D summary
 
-2. DIV1D summary
-3. SOLPS-ITER "mappings"
-4. DIV1D molecular model
-5. Comparison between (steady-state) DIV1D and SOLPS-ITER
-6. Dominant collisional-radiative processes in DIV1D, SOLPS-ITER models
-7. Density ramp sims
-8. TCV sims (steady-state and density ramp)
-
-## DIV1D summary
-
-### Assumptions
+## Assumptions
 
 * Quasineutrality: $n_e = n_i = n$
 * Single temperature: $T_e=T_i$
 * 1D grid along field line(s); stagnation point to target
   
-### Core equations
+## Core equations
 
 Solves four time-dependent PDEs for plasma density, parallel momentum, energy, neutral density in SI units:
 
@@ -31,7 +20,7 @@ $$
 \end{align}
 $$
 
-### Neutral model
+## Neutral model
 5 volumes containing neutrals, each with a different density, $n_b^i$ (i=1-5).
 Each volume is *outside* the SOL (I think) but in contact with different regions of it.
 
@@ -52,7 +41,7 @@ $$
 
 Hence volumes can act as sinks if their densities are lower than the SOL's neutral density.
 
-### Cell volumes
+## Cell volumes
 
 "Volume" of 1D cell $i$ is:
 
@@ -78,7 +67,7 @@ $$
 where $B_{trans}(x)$ is the component of the magnetic field used to simulate cross-field transport.
 Hence, for fixed $B_{trans}(x)$, SOL width depends only on $\sin(\theta(x))$ and on the SOL width at the outer midplane, $\lambda_{omp}$.
 
-### Neutral atom momentum balance updates
+## Neutral atom momentum balance updates
 
 * Orig Div1D - no momentum transfer from ions to neutrals in divertor region.
 * SOLPS-ITER suggests atoms have $\sim50\%$ flow velocity of the ions in the divertor.
@@ -95,7 +84,7 @@ $$
 * To avoid adding a neutrals energy equation, assume $E_n$=0.5 eV.
 * $S_{\rm mom,n}$ is determined by collisional processes in the divertor (see appendix B).
 
-### Molecule model
+## Molecules model
 
 Add molecules density equation
 
@@ -110,7 +99,7 @@ where $D_m$ is the diffusion coefficient for the molecules.
 * Assume no net parallel velocity (unlike SD1D)
 * Justified by 
 
-### Collisional radiative processes
+## Collisional radiative processes
 
 * Including molecules makes it necessary to track many more collisional-radiative processes.
 * Complete list in appendix E (includes momentum, energy losses through inelastic collisions)
@@ -121,7 +110,7 @@ Atomic / atomic ions:
 | Index | Reaction                                   | Notes                                         | Also in SD1D? |
 | ----- | ------------------------------------------ | --------------------------------------------- | ------------- |
 | 1     | $e + D \to 2e+D^+$                         | Collisional ionisation of D                   | Y             |
-|       | $e + D \to 2e+D^+$                         | Collisional ionisation of D + radiative decay | Y?            |
+|       | $e + D \to 2e+D^+ + h\nu$                  | Collisional ionisation of D + radiative decay | Y?            |
 | 2     | $D^+ + D \to D+D^+$                        | D charge exchange                             | Y             |
 | 3     | $e + D^+ \to D$                            | D recombination (radiative + three-body)      | Y             |
 |       | $e + D^+ \to D + h\nu$                     | D recombination (radiative power loss)        | Y?            |
@@ -154,13 +143,13 @@ DIV1D uses AMJUEL for ion-neutral reactions:
 * SOLPS_ITER/EIRENE and DIV1D both use AMJUEL for reactions with H.
 * For Deuterium, DIV1D rates are calculated using a rescaled ion temperature: $\langle\sigma v\rangle_D(T)=\langle\sigma v\rangle_H(T/2)$ where $\langle\sigma v\rangle_i$ is the rate coefficient for species $i$.
 
-### Geometry (to accommodate MAST-U)
+## Geometry (to accommodate MAST-U)
 
 * Allow $\sin(\theta(x))$, $R(x)$ to vary along SOL; set by mapping from SOLPS MAST-U sims directly.
 * Allow baffle point to be different to X-point (previous sims focussed on TCV, which Kobussen claim is "unbaffled", but see [recent TCV work](https://iopscience.iop.org/article/10.1088/1741-4326/ace45f)).
 * Soften density change between the core and divertor common flux regions.
 
-### Self-consistent background and core density
+## Self-consistent background and core density
 
 Previous DIV1D set (presumably constant) neutral volume densities $n_b^i$ from SOLPS-ITER sims. To model gas puffs, neutral densities need to vary self-consistently.
 
@@ -180,7 +169,7 @@ $$
 
 **Lots more on this (p8,p9), but skipping it for now**
 
-### Comparison with SOLPS - profiles
+## Comparison with SOLPS - profiles
 
 * Heat flux density and electron temperature profiles
 * The electron density profile of DIV1D shows a rapid increase around the baffle point, where the external neutral density suddenly increases
@@ -191,7 +180,7 @@ $$
 * The atomic and molecular density profiles of DIV1D and SOLPS are similar, especially in the divertor region.
 * The parallel flow velocity of the atoms of DIV1D lies within the value intervals of the 1D SOLPS mapping, except at the target, because DIV1D uses vn(L) = 0 as a boundary condition here.
 
-### Comparison with SOLPS - Collisional radiative processes
+## Comparison with SOLPS - Collisional radiative processes
 
 Ion sources and sinks:
 * MAR, MAI and EIR reaction rates are similiar between SD1D and DIV1D (probably because underlying density profs are similar).
@@ -214,48 +203,48 @@ MAR/MAD:
 * But $D^-$ reactions expected to be important in their knock-on effect on the equilibirum
 * SOLPS-ITER don't include $D^-$ because "due to isotope dependencies, generating $D^-$ is less likely than $H^-$". Implication is that Kobussen et al. disagree. 
 
-### Comparison with SOLPS - Ramp-up sims
+## Comparison with SOLPS - Ramp-up sims
 
 * Heat flux at target: New DIV1D model matches SOLPS very nicely
 * Particle flux at target: New DIV1D model matches much better than old one and is close-ish to SOLPS, not as good as heat flux.
 * Differences likely due to different SOL widths in different (*steady-state*) SOLPS sims vs single SOL width in one *time-evolving* DIV1D sim.
 
-### Compatison with TCV
+## Compatison with TCV
 
 * Nothing critical; skipped
 
-### Appendix A
+## Appendix A
 
 * Tables of input params
 
-#### Appendix B
+### Appendix B
 
 * Full details of equation implementation, including formulation of source terms from reaction rate cross sections
 * Most important section if we want to re-implement Kobussen approach
 
-### Appendix C
+## Appendix C
 
 * Description of which combination of reactions are attributed to
   * MAR, MAR via $D_2^+$
   * MAR, MAR via $D^-$
   * Energy loss through $D_2^+$, $D^-$ reactions
 
-### Appendix D
+## Appendix D
 
 * Glossary of variables
 
-### Appendix E
+## Appendix E
 
 * Full table of collisional-radiative (CR) processes with rate constants
   
 
-## Useful refs
+# Useful refs
 
 * Code papers
   * DIV1D presentation paper [[4]](https://dx.doi.org/10.1088/1361-6587/ac9dbd)
   * DIV1D major update paper [[5]](https://dx.doi.org/10.1088/1361-6587/ad2e37)
   * SD1D [[7]](https://dx.doi.org/10.1088/1361-6587/ac6827)
-* Modelling general
+* Modelling
   * AMJUEL's mass-rescaled rates underestimates molecular charge exchange at low temperature [[13]](https://dx.doi.org/10.1088/1741-4326/acd394) and [[14]](https://arxiv.org/abs/2311.16732)
   * Use of AMJUEL for CR processes in plasma and plasma-neutral interactions (or possibly their equaivalence with SD1D) [[5]](https://dx.doi.org/10.1088/1361-6587/ad2e37) and [[10]](https://doi.org/10.13182/FST47-172)
 * Experimental
@@ -265,7 +254,7 @@ MAR/MAD:
   * DIV1D without molecules struggles to model the MAST-U SOL [5](https://dx.doi.org/10.1088/1361-6587/ad2e37)
   * SD1D uses neutral energy equation and molecular momentum and energy equations [[7]](https://dx.doi.org/10.1088/1361-6587/ac6827)
 
-## To define:
+# Defs
 
 * Common flux region (CFR):
 * Private flux region (PFR):
