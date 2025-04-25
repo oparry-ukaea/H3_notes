@@ -97,7 +97,6 @@ $$
 where $D_m$ is the diffusion coefficient for the molecules.
 
 * Assume no net parallel velocity (unlike SD1D)
-* Justified by 
 
 ## Collisional radiative processes
 
