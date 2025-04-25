@@ -10,7 +10,7 @@ SD1D and UEDGE papers presents H rates - assume they just use mass-rescaling for
 | $D^+   + e   \to D$                        | Recombination (radiative)                    | Y                  | Y    | Y?    |       |          |                      |
 | $D^+   + e   \to D     + h\nu$             | Recombination (radiative power loss)         | Y                  | Y?   | Y     |       |          | AMJUEL H.4,10 2.1.8  |
 | $D^+   + 2e  \to D     + e$                | Recombination (three body)                   | Y                  | Y?   | Y     |       | Y        | AMJUEL H.4,10 2.1.8? |
-| $D^+   + D   \to D^+   + D$                | Electron-ion elastic collisions              | Y                  |      |       |       |          |                      |
+| $D^+   + D   \to D^+   + D$                | Atom-ion elastic collisions                  | Y                  |      |       |       |          |                      |
 | $D_2   + e   \to D_2^+ + 2e$               | Non-dissociative ionisation                  | Y                  | Y    | Y     |       |          | AMJUEL H.4 2.1.9     |
 | $D_2   + e   \to D     + D^+ + 2e$         | Dissociative ionisation                      | N                  |      | Y     |       |          | AMJUEL H.4 2.1.10    |
 | $D_2   + e   \to 2D    + e$                | Dissociation                                 | Y                  | Y    |       |       |          | AMJUEL H.4 2.1.5g    |
