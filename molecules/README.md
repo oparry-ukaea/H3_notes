@@ -3,7 +3,10 @@
 ## Tasks
 
 1. Lit review
+    * [Holm - UEDGE](./Holm2023.md)
     * [Kobussen - DIV1D](./Kobussen2025.md)
+    * [Kotov - SOLPS-ITER](./Kotov2008.md)
+    * [Zhou - SD1D](./Zhou2022.md)
     * Key questions:
       * What do we need for rough equivalence with SOLPS
       * What are SOLPS' shortcomings?

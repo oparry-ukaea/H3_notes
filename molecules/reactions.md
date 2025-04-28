@@ -23,3 +23,5 @@ SD1D and UEDGE papers presents H rates - assume they just use mass-rescaling for
 | $e + D_2 \to D^- + D$                      | Dissociative attachment                      | Y                  | N    |       |       |          |                      |
 | $e + D_2 \to e + D_2^* \to e + D_2 + h\nu$ | Molecular excitation + radiative decay       | Y                  |      |       |       |          |                      |
 | $D^+ + D_2 \to D^+ + D_2$                  | Molecule-ion elastic collisions              | Y                  | Y    | Y     |       |          | AMJUEL H.0,1,3 0.3T  |
+
+SOLEDGE3X - do they have molecules? Latest papers (2024) only mention Neutrals vis EIRENE.
