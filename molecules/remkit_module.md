@@ -92,5 +92,10 @@ $R M_{C+3} v_{C+3}$
 
 ### Symmetric CX
 
-- Concept of slow, fast species
-- For CX, slow, fast map to the same species.
+- Could crowbar symmetric CX into existing framework by differentiating input, output species in pop change map
+  
+- possible implementation; rewrite $H + H_{+} \to H_{+} H$ as $H_{SCXin} + H_{+,SCXin} \to H_{+,SCXout} H_{SCXout}$
+- Such that reactants all have -1 pop changes, products all have +1, but labels in the state[species] map automatically strip the \_SCX fuffix.
+- Enum class where pb_name != name ??
+- Or maybe SymCXReaction subclass of Reaction that handles everything?
+- Details tbd
