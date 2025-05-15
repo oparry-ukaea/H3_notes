@@ -72,7 +72,8 @@ Note that:
 
 $C_{+3} + e \to C_{+4} + 2e$
 
-${C+3}$ ($c_s < 0$)
+${C+3}$ ($c_s < 0$) mom. source is
+ 
 $$
 \begin{align}
 \frac{\partial{G_{C+3}}}{\partial{t}} &= R G_{C+3} \frac{- w_{C+3} }{n_{C+3}} \\
@@ -86,13 +87,32 @@ $R M_{C+3} v_{C+3}$
 
 ## Energy
 
+ToDo
+
+---
 
 ### Symmetric CX
 
-- Could crowbar symmetric CX into existing framework by differentiating input, output species in pop change map
+Could crowbar symmetric CX into existing framework by differentiating input, output species in pop change map
   
-- possible implementation; rewrite $H + H_{+} \to H_{+} H$ as $H_{SCXin} + H_{+,SCXin} \to H_{+,SCXout} H_{SCXout}$
-- Such that reactants all have -1 pop changes, products all have +1, but labels in the state[species] map automatically strip the \_SCX fuffix.
+Possible implementation; rewrite
+
+$$
+\begin{equation}
+H + H_{+} \to H_{+} H
+\end{equation}
+$$
+
+as
+
+$$
+\begin{equation}
+H_{SCXin} + H_{+,SCXin} \to H_{+,SCXout} H_{SCXout}
+\end{equation}
+$$
+
+Then reactants all have -1 pop changes, products all have +1, but labels in the state[species] map automatically strip the \_SCX fuffix.
+
 - Enum class where pb_name != name ??
 - Or maybe SymCXReaction subclass of Reaction that handles everything?
 - Details tbd
