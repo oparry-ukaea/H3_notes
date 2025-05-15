@@ -34,3 +34,13 @@ So:
   - Compute mass ratio Q (accounting for product number)
   - Add Q to product mom source
 Subtract each reactant 
+
+
+for (r: reactants):
+  reactant_mom = R * M_r * v_r
+  reactants_mom_tot += reactant_mom
+  state[species][r][momentum_source] -= reactant_mom
+
+for (p: products):
+  prev_prod_mom = R * M_p * v_p
+  
