@@ -5,13 +5,11 @@ For each transition / reaction (that isn't symmettric CX), set up terms for
 ## Density / number
 $$
 \begin{align}
-\frac{\partial{n_s}}{\partial{t}} &= c_s R \prod_{s'\isin I}{n_{s'}}
+\frac{\partial{n_s}}{\partial{t}} &= c_s R \prod_{s'{\in}I}{n_{s'}}
 \end{align}
 $$
 
-where the product is over $I$, the set of input/reactant species
-
-where the sum is over all reactants / instate species.
+where the product is over $I$, the set of input/reactant species and
 
  - $c_s$ is the population change
  - $n_{s'}$ the species density of species $s'$
@@ -30,10 +28,9 @@ $c_s$ is:
 
 $$
 \begin{align}
-\frac{\partial{n_{C+3}}}{\partial{t}} &= -R~n_{C+3}~n_e \\
-\frac{\partial{n_{C+4}}}{\partial{t}} &= R~n_{C+3}~n_e \\
-\frac{\partial{n_{e}}}{\partial{t}} &= R~n_{C+3}~n_e \\
-
+\frac{\partial{n_{C+3}}}{\partial{t}} &= -R n_{C+3} n_e \\
+\frac{\partial{n_{C+4}}}{\partial{t}} &= R n_{C+3} n_e \\
+\frac{\partial{n_{e}}}{\partial{t}} &= R n_{C+3} n_e \\
 \end{align}
 $$
 
@@ -44,8 +41,8 @@ $$
 
 $$
 \begin{align}
-\frac{\partial{G_s}}{\partial{t}} &= \frac{c_s w_s R G_s}{n_s} {~~~\rm if~c_s < 0} \\
-\frac{\partial{G_s}}{\partial{t}} &= - R \sum_{s'} \left(\frac{m_s}{m_{s'}} c_{s'} \frac{w_s w_{s'}}{w_{out}} \frac{G_{s'}}{n_{s'}}\right) {~~~\rm if~c_s > 0} \\
+\frac{\partial{G_s}}{\partial{t}} &= \frac{c_s w_s R G_s}{n_s} \text{ if } c_s < 0 \\
+\frac{\partial{G_s}}{\partial{t}} &= - R \sum_{s'} \left(\frac{m_s}{m_{s'}} c_{s'} \frac{w_s w_{s'}}{w_{out}} \frac{G_{s'}}{n_{s'}}\right) \text{ if } c_s > 0 \\
 \end{align}
 $$
 
