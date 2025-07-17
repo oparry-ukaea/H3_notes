@@ -31,7 +31,7 @@ $$
 \end{align}
 $$
  
-**N.B. Should there be a factor of $p_s$ in here too?**
+**N.B. Should probably be a factor of $p_s$ in here too?**
 
 where 
 
@@ -92,11 +92,9 @@ where $\sum_{r}$ signifies a sum over all reactants / in-state species which hav
  - $p_r$ is the participation factor of reactant $r$
  - $C_r$ is the population change of reactant $r$
  - $C_s$ is the population change of species $s$
- - $S_{W,s} = p_s / \sum_{P} p_{P}$ is the energy splitting factor for species $s$
  - $R$ is the reaction rate
  - $W_r$ is the energy associated with reactant species $r$
  - $W_s$ is the energy associated with species $s$
-
 
 The splitting factor $S_{W,s}$ is the number of particles of species $s$ generated per reaction, divided by the total number of particles ($q$) generated ($C_s > 0$).
 That is
