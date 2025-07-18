@@ -125,11 +125,11 @@ as
 
 $$
 \begin{equation}
-H_{SCXin} + H_{+,SCXin} \to H_{+,SCXout} H_{SCXout}
+H_{in} + H_{+,in} \to H_{+,out} H_{out}
 \end{equation}
 $$
 
-Then reactants all have -1 pop changes, products all have +1. When getting/setting data for the participating species, the suffixes would be automatically stripped. Potentially use a wrapper around get/set operations in Reaction class?
+Then reactants all have -1 pop changes, products all have +1. When getting/setting data for the participating species, the suffixes would be automatically stripped such that the state is modified appropriately. Could use a wrapper around get/set operations that handles this when interacting with the state in Reaction::transform()?
 
 <!-- 
 ## Examples
