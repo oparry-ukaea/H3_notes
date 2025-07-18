@@ -96,7 +96,7 @@ where $\sum_{r}$ signifies a sum over all reactants / in-state species which hav
  - $W_r$ is the energy associated with reactant species $r$
  - $W_s$ is the energy associated with species $s$
 
-The splitting factor $S_{W,s}$ is the number of particles of species $s$ generated per reaction, divided by the total number of particles ($q$) generated ($C_s > 0$).
+The splitting factor $S_{W,s}$ is the number of particles of species $s$ generated per reaction, divided by the total number of particles generated (subscript $q$, indicating $C_s > 0$).
 That is
 
 $$
