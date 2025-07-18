@@ -27,14 +27,13 @@ Density source for species $s$:
 
 $$
 \begin{align}
-\frac{\partial{n_s}}{\partial{t}} &= C_s R
+\frac{\partial{n_s}}{\partial{t}} &= p_s C_s R
 \end{align}
 $$
- 
-**N.B. Should probably be a factor of $p_s$ in here too?**
 
 where 
 
+ - $p_s$ is the participation factor of species $s$
  - $C_s$ is the population change in species $s$
  - $R$ is the reaction rate in number per unit time.
 
