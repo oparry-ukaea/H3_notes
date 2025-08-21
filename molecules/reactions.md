@@ -23,21 +23,23 @@ For $H$ below, read $H$, $D$, or $T$
 
 ## Molecular
 
-| Reaction                                   | Notes                                        | DIV1D (Kobussen25) | SD1D (Zhou22) | SOLPS | UEDGE | Hermes-3 | DB used by EIRENE   | DB used by H3, if different |
-| ------------------------------------------ | -------------------------------------------- | ------------------ | ------------- | ----- | ----- | -------- | ------------------- | --------------------------- |
-| $H_2   + e   \to H_2^+ + 2e$               | Non-dissociative ionisation                  | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.1.9    |                             |
-| $H_2   + e   \to H     + H^+ + 2e$         | Dissociative ionisation                      | N                  | Y             | Y     |       | N        | AMJUEL H.4 2.1.10   |                             |
-| $H_2   + e   \to 2H    + e$                | Dissociation                                 | Y                  | Y             |       |       | N        | AMJUEL H.4 2.1.5g   |                             |
-| $H_2   + H^+ \to H_2^+ + H$                | Molecular charge exchange / 'ion conversion' | Y                  | Y             | Y     |       | N        | AMJUEL H.2 3.2.3    |                             |
-| $H_2^+ + e   \to 2H$                       | Dissociative recombination ($H_2^+$)         | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.2.14   |                             |
-| $H_2^+ + e   \to H     + H^+ + e$          | Dissociative excitation ($H_2^+$)            | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.2.12   |                             |
-| $H_2^+ + e   \to 2H^+  + 2e$               | Dissociative ionisation ($H_2^+$)            | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.2.11   |                             |
-| $H^+   + H^- \to 2H$                       | $H^-$ charge exchange                        | Y                  | N             |       |       | N        |                     |                             |
-| $H^+   + H^- \to 2e + H^+ + H$             | Ionisation (with $H^−$)                      | Y                  | N             |       |       | N        |                     |                             |
-| $e + H_2 \to H^- + H$                      | Dissociative attachment                      | Y                  | N             |       |       | N        |                     |                             |
-| $e + H_2 \to e + H_2^* \to e + H_2 + h\nu$ | Molecular excitation + radiative decay       | Y                  |               |       |       | N        |                     |                             |
-| $H^+ + H_2 \to H^+ + H_2$                  | Molecule-ion elastic collisions              | Y                  | Y             | Y     |       | N        | AMJUEL H.0,1,3 0.3T | Plan on AMJUEL H.3 0.3T?    |
-| $H^+ + H_2 + e \to 3H$                     | MAR via H−                                   |                    | Y             |       |       | N        |                     |                             |
+| Reaction                                   | Notes                                            | DIV1D (Kobussen25) | SD1D (Zhou22) | SOLPS | UEDGE | Hermes-3 | DB used by EIRENE   | DB used by H3, if different |
+| ------------------------------------------ | ------------------------------------------------ | ------------------ | ------------- | ----- | ----- | -------- | ------------------- | --------------------------- |
+| $H_2   + e   \to H_2^+ + 2e$               | Non-dissociative ionisation                      | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.1.9    |                             |
+| $H_2   + e   \to H     + H^+ + 2e$         | Dissociative ionisation                          | N                  | Y             | Y     |       | N        | AMJUEL H.4 2.1.10   |                             |
+| $H_2   + e   \to 2H    + e$                | Dissociation                                     | Y                  | Y             |       |       | N        | AMJUEL H.4 2.1.5g   |                             |
+| $H_2   + H^+ \to H_2^+ + H$                | Molecular charge exchange / 'ion conversion'     | Y                  | Y             | Y     |       | N        | AMJUEL H.2 3.2.3    |                             |
+| $H_2^+ + e   \to 2H$                       | Dissociative recombination ($H_2^+$)             | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.2.14   |                             |
+| $H_2^+ + e   \to H     + H^+ + e$          | Dissociative excitation ($H_2^+$)                | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.2.12   |                             |
+| $H_2^+ + e   \to 2H^+  + 2e$               | Dissociative ionisation ($H_2^+$)                | Y                  | Y             | Y     |       | N        | AMJUEL H.4 2.2.11   |                             |
+| $H^+   + H^- \to 2H$                       | $H^-$ charge exchange                            | Y                  | N             |       |       | N        |                     | (P) AMJUEL H.4 7.2.3a       |
+| $H^+   + H^- \to 2e + H^+ + H$             | Ionisation (with $H^−$)                          | Y                  | N             |       |       | N        |                     | (P) AMJUEL H.4 7.2.3b       |
+| -                                          | "CX multistep ionization rate for $H^-$ ions"?   | -                  | -             | -     | -     | -        | -                   | -                           |
+| $e + H_2 \to H^- + H$                      | Dissociative attachment                          | Y                  | N             |       |       | N        |                     | (P) AMJUEL H.2 2.2.17       |
+| $e + H_2 \to e + H_2^* \to e + H_2 + h\nu$ | Molecular excitation + radiative decay           | Y                  |               |       |       | N        |                     | (P)                         |
+| $H^+ + H_2 \to H^+ + H_2$                  | Molecule-ion elastic collisions                  | Y                  | Y             | Y     |       | N        | AMJUEL H.0,1,3 0.3T | (P) AMJUEL H.3 0.3T?        |
+| $H^+ + H_2 + e \to 3H$                     | MAR via $H^−$                                    |                    | Y             |       |       | N        |                     | (P) AMJUEL H.4 3.2.3r       |
+| -                                          | Should this be "MAR via $H_2^+$ for cold $H_2$"? | -                  | -             | -     | -     | -        | -                   | -                           |
 
 Questions:
 - SD1D and UEDGE papers presents H rates - do they use mass-rescaling for D,T?
