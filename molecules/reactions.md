@@ -35,10 +35,11 @@ Key
 
 ## Molecular
 
-DIV1D: Kobussen25
-SD1D: Zhou22
-SOLPS: Kotov08
-UEDGE: Holm22
+Refs:
+- DIV1D: Kobussen25
+- SD1D: Zhou22
+- SOLPS: Kotov08
+- UEDGE: Holm22
 
 | Reaction                                               | Notes                                  | DEFAULT DB      | DIV1D | SD1D | SOLPS           | UEDGE         | H3 (planned!)   |
 | ------------------------------------------------------ | -------------------------------------- | --------------- | ----- | ---- | --------------- | ------------- | --------------- |
@@ -55,7 +56,6 @@ UEDGE: Holm22
 | $e     + H_2     \to e     + H_2^* \to e + H_2 + h\nu$ | Molecular excitation + radiative decay |                 | Y     |      | N               |               | N               |
 | $H^+   + H_2     \to H^+   + H_2$                      | Molecule-ion elastic collisions        | AJ H.0,1,3 0.3T | Y     | Y    | Y               |               | `AJ H.3 0.3T?`  |
 | $H^+   + H_2 + e \to 3H$                               | MAR via $H^−$                          |                 | Y     | N    |                 | N             | `AJ H.4 3.2.3r` |
-|                                                        |                                        |                 |       |      |                 |               |                 |
 
 ### Molecule-related
 
@@ -66,12 +66,12 @@ UEDGE: Holm22
 | $H^+ + H^- \to H^+ + H(n=3) + e$ |           | HH H.3 7.2.3 |       |      | Y (Holm claims) |       |               |
 
 
-
 Alternative names:
 - "MAR via $H^−$" is "MAR via $H_2^+$ for cold $H_2$" in the Amjuel description
 - "Ionisation (with $H^−$") is "CX multistep izn rate for $H^-$" in the Amjuel description
 
-Discrepancies to resolve:
+Questions and discrepancies:
+- Kobussen don't actually list the Amjuel data labels, they just say they use AJ, like Wiesen2015 (SOLPS-ITER pres. paper) and Reiter05 (EIRENE pres. paper). Neither of those list Amjuel labels.
 - $H_2^+ + e \to 2H$ is written as $H_2^+ + e \to H + H(n=2-8)$ in Holm; check AJ
 - Holm22 claims that "The Kotov-2008 model is metastable-unresolved ... and evaluates the transport and dissociation of a single $H_2$ species without considering transport of the vibrationally excited populations of electronic ground-state molecules.", but table 1 in Kotov08 lists the reaction data refs which Holm says are "metastable resolved"...
 
