@@ -33,7 +33,7 @@ Key
 | $H^+   + 2e  \to H     + e$          | Recombination (three body)           | AJ H.4,10 2.1.8?    | Y     | Y?   | Y     |       | Y                     |
 | $H^+   + H   \to H^+   + H$          | Atom-ion elastic collisions          |                     | Y     |      |       |       |                       |
 
-## Molecular
+## Molecular or molecular adjacent
 
 Refs:
 - DIV1D: Kobussen25
@@ -41,29 +41,24 @@ Refs:
 - SOLPS: Kotov08
 - UEDGE: Holm22
 
-| Reaction                                               | Notes                                  | DEFAULT DB      | DIV1D | SD1D | SOLPS           | UEDGE         | H3 (planned!)   |
-| ------------------------------------------------------ | -------------------------------------- | --------------- | ----- | ---- | --------------- | ------------- | --------------- |
-| $H_2   + e       \to H_2^+ + 2e$                       | Non-dissociative izn                   | AJ H.4 2.2.9    | Y     | Y    | Y               |               | N               |
-| $H_2   + e       \to H     + H^+ + 2e$                 | Dissociative izn                       | AJ H.4 2.2.10   | N     | Y    | Y               |               | N               |
-| $H_2   + e       \to 2H    + e$                        | (Neutral) Dissociation                 | AJ H.4 2.2.5g   | Y     | Y    | Y               | Y             | N               |
-| $H_2   + H^+     \to H_2^+ + H$                        | Molecular CX / 'ion conversion'        | AJ H.2 3.2.3    | Y     | Y    | Y               | Y             | N               |
-| $H_2^+ + e       \to 2H$                               | Dissociative recombination ($H_2^+$)   | AJ H.4 2.2.14   | Y     | Y    | Y               |               | N               |
-| $H_2^+ + e       \to H     + H^+ + e$                  | Dissociative excitation ($H_2^+$)      | AJ H.4 2.2.12   | Y     | Y    | Y               |               | N               |
-| $H_2^+ + e       \to 2H^+  + 2e$                       | Dissociative izn ($H_2^+$)             | AJ H.4 2.2.11   | Y     | Y    | Y               |               | N               |
-| $H^+   + H^-     \to 2H$                               | $H^-$ CX                               |                 | Y     | N    | N               | AJ H.4 7.2.3a | N               |
-| $H^+   + H^-     \to 2e    + H^+ + H$                  | Ionisation (with $H^−$)                |                 | Y     | N    | N               | AJ H.4 7.2.3b | N               |
-| $e     + H_2     \to H^-   + H$                        | Dissociative attachment                | AJ H.2 2.2.17   | Y     | N    | Y (Holm claims) |               | N               |
-| $e     + H_2     \to e     + H_2^* \to e + H_2 + h\nu$ | Molecular excitation + radiative decay |                 | Y     |      | N               |               | N               |
-| $H^+   + H_2     \to H^+   + H_2$                      | Molecule-ion elastic collisions        | AJ H.0,1,3 0.3T | Y     | Y    | Y               |               | `AJ H.3 0.3T?`  |
-| $H^+   + H_2 + e \to 3H$                               | MAR via $H^−$                          |                 | Y     | N    |                 | N             | `AJ H.4 3.2.3r` |
-
-### Molecule-related
-
-| Reaction                         | Notes     | DEFAULT DB   | DIV1D | SD1D | SOLPS           | UEDGE | H3 (planned!) |
-| -------------------------------- | --------- | ------------ | ----- | ---- | --------------- | ----- | ------------- |
-| $H^-   + e       \to H + 2e$     | $H^-$ izn | HH H.2 7.1.1 |       |      | Y (Holm claims) |       |               |
-| $H^+ + H^- \to H^+ + H(n=2) + e$ |           | HH H.3 7.2.2 |       |      | Y (Holm claims) |       |               |
-| $H^+ + H^- \to H^+ + H(n=3) + e$ |           | HH H.3 7.2.3 |       |      | Y (Holm claims) |       |               |
+| Reaction                                           | Notes                                  | DEFAULT DB      | DIV1D | SD1D | SOLPS           | UEDGE | H3 (planned!)  |
+| -------------------------------------------------- | -------------------------------------- | --------------- | ----- | ---- | --------------- | ----- | -------------- |
+| $H_2   + e       \to H_2^+ + 2e$                   | Non-dissociative izn                   | AJ H.4 2.2.9    | Y     | Y    | Y               |       | N              |
+| $H_2   + e       \to H     + H^+ + 2e$             | Dissociative izn                       | AJ H.4 2.2.10   | N     | N    | Y               |       | N              |
+| $H_2   + e       \to 2H    + e$                    | (Neutral) Dissociation                 | AJ H.4 2.2.5g   | Y     | Y    | Y               | Y     | N              |
+| $H_2   + H^+     \to H_2^+ + H$                    | Molecular CX / 'ion conversion'        | AJ H.2 3.2.3    | Y     | Y    | Y               | Y     | N              |
+| $H_2^+ + e       \to 2H$                           | Dissociative recombination ($H_2^+$)   | AJ H.4 2.2.14   | Y     | Y    | Y               |       | N              |
+| $H_2^+ + e       \to H     + H^+ + e$              | Dissociative excitation ($H_2^+$)      | AJ H.4 2.2.12   | Y     | Y    | Y               |       | N              |
+| $H_2^+ + e       \to 2H^+  + 2e$                   | Dissociative izn ($H_2^+$)             | AJ H.4 2.2.11   | Y     | Y    | Y               |       | N              |
+| $H^+   + H^-     \to 2H$                           | $H^-$ multistep CX recombination       | AJ H.4 7.2.3a   | Y     | N    | N               | Y     | N              |
+| $H^+   + H^-     \to 2e    + H^+ + H$              | Ionisation (with $H^−$)                | AJ H.4 7.2.3b   | Y     | N    | N               | Y     | N              |
+| $H_2   + e       \to H^-   + H$                    | Dissociative attachment                | AJ H.2 2.2.17   | Y     | N    | Y (Holm claims) |       | N              |
+| $H_2   + e       \to H_2^* + e \to H_2 + e + h\nu$ | Molecular excitation + radiative decay |                 | Y     | N    | N               |       | N              |
+| $H^+   + H_2     \to H^+   + H_2$                  | Molecule-ion elastic collisions        | AJ H.0,1,3 0.3T | Y     | N    | Y               |       | `AJ H.3 0.3T?` |
+| $H^+   + H_2 + e \to 3H$                           | MAR via $H_2^+$, cold $H_2$            | AJ H.4 3.2.3r   |       | Y    |                 | N     |                |
+| $H^-   + e       \to H + 2e$                       | $H^-$ izn                              | HH H.2 7.1.1    |       |      | Y (Holm claims) |       |                |
+| $H^+ + H^- \to H^+ + H(n=2) + e$                   |                                        | HH H.3 7.2.2    |       |      | Y (Holm claims) |       |                |
+| $H^+ + H^- \to H^+ + H(n=3) + e$                   |                                        | HH H.3 7.2.3    |       |      | Y (Holm claims) |       |                |
 
 
 Alternative names:
@@ -71,12 +66,11 @@ Alternative names:
 - "Ionisation (with $H^−$") is "CX multistep izn rate for $H^-$" in the Amjuel description
 
 Questions and discrepancies:
-- Kobussen don't actually list the Amjuel data labels, they just say they use AJ, like Wiesen2015 (SOLPS-ITER pres. paper) and Reiter05 (EIRENE pres. paper). Neither of those list Amjuel labels.
+- Kobussen claim "SD1D only includes MAR via D−, whereas [we] include both MAR and MAD via D−"
+  - Why do Zhou call $H^+   + H_2 + e \to 3H$ "MAR via $H^-$"? Why do Amjuel call the same reaction "MAR via $H_2^+$"??
+- Kobussen and Zhou don't actually list the Amjuel data labels, they just say they use AJ, like Wiesen2015 (SOLPS-ITER pres. paper) and Reiter05 (EIRENE pres. paper). Neither of those list specific Amjuel labels.
 - $H_2^+ + e \to 2H$ is written as $H_2^+ + e \to H + H(n=2-8)$ in Holm; check AJ
 - Holm22 claims that "The Kotov-2008 model is metastable-unresolved ... and evaluates the transport and dissociation of a single $H_2$ species without considering transport of the vibrationally excited populations of electronic ground-state molecules.", but table 1 in Kotov08 lists the reaction data refs which Holm says are "metastable resolved"...
-
-
-Questions:
 - Kotov08 states that the rates (from Amjuel and HydHel) are for Deuterium. Is there mass-rescaling going on?
 - SD1D and UEDGE papers presents H rates - do they use mass-rescaling for D,T?
 - Do SOLEDGE3X have molecules? Latest papers (2024) only mention Neutrals via EIRENE.
@@ -99,3 +93,18 @@ Where:
 
 Further discussion in Zhou22, details on channels in Janev03
 
+### MAR
+
+Three main chains:
+
+| Label      |     | Reaction                                                     | Notes                                                                            |
+| ---------- | --- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| 1. DA-MAR  | DA  | $H_2(v) + e \to H^- + H$                                     | Dissociative attachment (DA) of vibrationally excited molecules, **followed by** |
+|            | MN  | $H^- + H^+  \to H + H^*$                                     | mutual neutralization (MN) (also called $H^-$ multistep CX recombination?)       |
+| 2. IC-MAR  | IC  | $H_2(v) + H^+ \to H_2^+ + H$                                 | Molecular CX or Ion Conversion(IC) **followed by**                               |
+|            | DR  | $H_2^+(v) + e \to H + H^*$                                   | dissociative recombination  (DR)                                                 |
+| 3. MIC-MAR | IC  | $H_2(v) + H^+ \to H_2^+ + H$                                 | Molecular CX or Ion Conversion(IC) **followed by**                               |
+|            | MIC | $H_2(v) +  H_2^+(v) \to H_3^+ + H$                           | molecular to triatomic molecular ion conversion (MIC) **followed by**            |
+|            | DR  | $H_3^+(v) + e \to 3H$ **OR** $H_3^+(v) + e \to H_2(v) + H^*$ | one of two possible DR reactions                                                 |
+
+(... and potentially a de-excitation $H + H^* \to 2H$).
