@@ -60,6 +60,16 @@ Refs:
 | $H^+ + H^- \to H^+ + H(n=2) + e$                   |                                        | HH H.3 7.2.2    |       |      | Y (Holm claims) |       |                |
 | $H^+ + H^- \to H^+ + H(n=3) + e$                   |                                        | HH H.3 7.2.3    |       |      | Y (Holm claims) |       |                |
 
+Amjuel docs suggest:
+
+| Label                        | AJ ref  | Reaction string |
+| ---------------------------- | ------- | --------------- |
+| MAD via $H^-$                | 2.2.17d | $$              |
+| MAR via $H^-$                | 2.2.17r | $$              |
+| MAD via $H_2^+$ (cold $H_2$) | 3.2.3d  | $$              |
+| MAI via $H_2^+$ (cold $H_2$) | 3.2.3i  | $$              |
+| MAR via $H_2^+$ (cold $H_2$) | 3.2.3r  | $$              |
+
 
 Alternative names:
 - "MAR via $H^−$" is "MAR via $H_2^+$ for cold $H_2$" in the Amjuel description
