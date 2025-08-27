@@ -75,7 +75,7 @@ Amjuel docs suggest the following possible rates for MAD, MAR, MAI (can't see th
 | MAI via $H_2^+$ (cold $H_2$) | 3.2.3i  | $H_2(+ e) + H^+ \to 2H^+ H + e(+e)$  | **Cold $H_2^+$**: $E_{H_2} = 0.1$ eV                       |
 | MAR via $H_2^+$ (cold $H_2$) | 3.2.3r  | $H^2(+ e) + H^+ \to 3H$              | Lots of caveats! Check AJ pdf.                             |
 
-All involve "$H^2$ multistep models".
+All involve " $H^2$ multistep models ".
 
 
 Questions and discrepancies:
