@@ -93,6 +93,12 @@ Where:
 
 Further discussion in Zhou22, details on channels in Janev03
 
+
+### MAD
+
+Several reactions involving $D_2^+$ and $D^-$ lead to the dissociation of molecules (MAD).
+MAD can result in an important source of neutral D atoms and plays a role in the power balance (section 4.3).
+
 ### MAR
 
 Three main chains:
@@ -111,7 +117,8 @@ Three main chains:
 
 
 ### Amjuel MAD, MAI, MAR reactions
-Amjuel docs suggest the following possible rates for MAD, MAR, MAI (can't see them referenced in the papers though):
+Amjuel docs suggest the following possible rates for MAD, MAR, MAI.
+Possibly irrelevant though; Kobussen25 (for example; appendix C) seem to derive overall rates by combining the rates of each reaction in the main MAD/MAI/MAR chains:
 
 | Label                        | AJ ref  | Reaction string                      | Notes                                                      |
 | ---------------------------- | ------- | ------------------------------------ | ---------------------------------------------------------- |
