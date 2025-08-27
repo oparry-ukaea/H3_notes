@@ -64,19 +64,6 @@ Refs:
 Alternative names:
 - "MAR via $H^−$" is "MAR via $H_2^+$ for cold $H_2$" in the Amjuel description
 - "Ionisation (with $H^−$") is "CX multistep izn rate for $H^-$" in the Amjuel description
-  
-Amjuel docs suggest the following possible rates for MAD, MAR, MAI (can't see them references in the papers though):
-
-| Label                        | AJ ref  | Reaction string                      | Notes                                                      |
-| ---------------------------- | ------- | ------------------------------------ | ---------------------------------------------------------- |
-| MAD via $H^-$                | 2.2.17d | $H_2(+ H^+) + e \to H^+ + 2H$        | **Cold $H_2$**: $E_{H_2} = 0.1$ eV                         |
-| MAR via $H^-$                | 2.2.17r | $H_2(+ H^+) + e \to 3H$              | **Cold $H_2$** + lots of caveats! Check AJ pdf.            |
-| MAD via $H_2^+$ (cold $H_2$) | 3.2.3d  | $H_2(+ e) + H^+ \to H^+ + H + H(+e)$ | **Cold $H_2^+$**: $E_{H_2} = 0.1$ eV, $n_e=n_p$, $T_e=T_p$ |
-| MAI via $H_2^+$ (cold $H_2$) | 3.2.3i  | $H_2(+ e) + H^+ \to 2H^+ H + e(+e)$  | **Cold $H_2^+$**: $E_{H_2} = 0.1$ eV                       |
-| MAR via $H_2^+$ (cold $H_2$) | 3.2.3r  | $H^2(+ e) + H^+ \to 3H$              | Lots of caveats! Check AJ pdf.                             |
-
-All involve " $H^2$ multistep models ".
-
 
 Questions and discrepancies:
 - Kobussen claim "SD1D only includes MAR via D−, whereas [we] include both MAR and MAD via D−"
@@ -121,3 +108,17 @@ Three main chains:
 |            | DR  | $H_3^+(v) + e \to 3H$ *OR* $H_3^+(v) + e \to H_2(v) + H^*$ | one of two possible DR reactions                                               |
 
 (... and potentially a de-excitation $H + H^* \to 2H$).
+
+
+### Amjuel MAD, MAI, MAR reactions
+Amjuel docs suggest the following possible rates for MAD, MAR, MAI (can't see them referenced in the papers though):
+
+| Label                        | AJ ref  | Reaction string                      | Notes                                                      |
+| ---------------------------- | ------- | ------------------------------------ | ---------------------------------------------------------- |
+| MAD via $H^-$                | 2.2.17d | $H_2(+ H^+) + e \to H^+ + 2H$        | **Cold $H_2$**: $E_{H_2} = 0.1$ eV                         |
+| MAR via $H^-$                | 2.2.17r | $H_2(+ H^+) + e \to 3H$              | **Cold $H_2$** + lots of caveats! Check AJ pdf.            |
+| MAD via $H_2^+$ (cold $H_2$) | 3.2.3d  | $H_2(+ e) + H^+ \to H^+ + H + H(+e)$ | **Cold $H_2^+$**: $E_{H_2} = 0.1$ eV, $n_e=n_p$, $T_e=T_p$ |
+| MAI via $H_2^+$ (cold $H_2$) | 3.2.3i  | $H_2(+ e) + H^+ \to 2H^+ H + e(+e)$  | **Cold $H_2^+$**: $E_{H_2} = 0.1$ eV                       |
+| MAR via $H_2^+$ (cold $H_2$) | 3.2.3r  | $H^2(+ e) + H^+ \to 3H$              | Lots of caveats! Check AJ pdf.                             |
+
+All involve " $H^2$ multistep models ".
