@@ -52,7 +52,7 @@ Refs:
 | $H_2^+ + e       \to H     + H^+ + e$              | Dissociative <br>excitation ($H_2^+$)    | AJ H.4 2.2.12   | Y     | Y    | Y               |       | N              |
 | $H_2^+ + e       \to 2H^+  + 2e$                   | Dissociative <br>ionisation ($H_2^+$)    | AJ H.4 2.2.11   | Y     | Y    | Y               |       | N              |
 | $H^+   + H^-     \to 2H$                           | $H^-$ multistep CX recombination         | AJ H.4 7.2.3a   | Y     | N    | N               | Y     | N              |
-| $H^+   + H^-     \to H^+ + H$ + e                  | Ionisation (with $H^−$)                  | AJ H.4 7.2.3b   | Y     | N    | N               | Y     | N              |
+| $H^+   + H^-     \to H^+ + H + e$                  | Ionisation (with $H^−$)                  | AJ H.4 7.2.3b   | Y     | N    | N               | Y     | N              |
 | $H_2   + e       \to H^-   + H$                    | Dissociative attachment                  | AJ H.2 2.2.17   | Y     | N    | Y (Holm claims) |       | N              |
 | $H_2   + e       \to H_2^* + e \to H_2 + e + h\nu$ | Molecular excitation + radiative decay   |                 | Y     | N    | N               |       | N              |
 | $H^+   + H_2     \to H^+   + H_2$                  | Molecule-ion elastic collisions          | AJ H.0,1,3 0.3T | Y     | N    | Y               |       | AJ H.3 0.3T    |
