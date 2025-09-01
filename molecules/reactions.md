@@ -3,7 +3,8 @@
 <!-- Key:
 - N: Not implemented
 - Y: Implemented without mass rescaled rates
-- Y*: Implemented with mass rescaled rates (e.g. $\langle\sigma v\rangle_D(T) = \langle\sigma v\rangle_H(T/2)$) for H isotopes, i.e. for $H$ below, read $H$|$D$|$T$ -->
+- Y*: Implemented with mass rescaled rates (e.g. $\langle\sigma v\rangle_D(T) = \langle\sigma v\rangle_H(T/2)$) for H isotopes, i.e. for $H$ below, read $H$|$D$|$T$
+-->
 
 
 Key
@@ -17,7 +18,7 @@ Key
 | ------------------------------------ | ------------------------------------ | ----- | ---- | ----- | ----- | -------- | ------------------ | --------------------------- |
 | $H     + e   \to H^+   + 2e$         | Ionisation                           | Y     | Y    | Y     |       | Y        | AJ H.4 2.1.5       |                             |
 | $H     + e   \to H^+   + 2e  + h\nu$ | Ionisation + radiative decay         | Y     | Y?   | Y?    |       | Y        |                    |                             |
-| $H^+   + H   \to H     + H^+$        | Charge exchange                      | Y     | Y    | Y     |       | Y        | HYDHEL H.1,3 3.1.8 | AJ H.3 3.1.8 (p111)         |
+| $H^+   + H   \to H     + H^+$        | Charge exchange                      | Y     | Y    | Y     |       | Y        | HH H.1,3 3.1.8     | AJ H.3 3.1.8 (p111)         |
 | $H^+   + e   \to H$                  | Recombination (radiative)            | Y     | Y    | Y?    |       |          |                    |                             |
 | $H^+   + e   \to H     + h\nu$       | Recombination (radiative power loss) | Y     | Y?   | Y     |       | Y        | AJ H.4,10 2.1.8    |                             |
 | $H^+   + 2e  \to H     + e$          | Recombination (three body)           | Y     | Y?   | Y     |       | Y        | AJ H.4,10 2.1.8?   |                             |
@@ -54,7 +55,7 @@ Refs:
 | $H^+   + H^-     \to 2e    + H^+ + H$              | Ionisation (with $H^−$)                | AJ H.4 7.2.3b   | Y     | N    | N               | Y     | N              |
 | $H_2   + e       \to H^-   + H$                    | Dissociative attachment                | AJ H.2 2.2.17   | Y     | N    | Y (Holm claims) |       | N              |
 | $H_2   + e       \to H_2^* + e \to H_2 + e + h\nu$ | Molecular excitation + radiative decay |                 | Y     | N    | N               |       | N              |
-| $H^+   + H_2     \to H^+   + H_2$                  | Molecule-ion elastic collisions        | AJ H.0,1,3 0.3T | Y     | N    | Y               |       | `AJ H.3 0.3T?` |
+| $H^+   + H_2     \to H^+   + H_2$                  | Molecule-ion elastic collisions        | AJ H.0,1,3 0.3T | Y     | N    | Y               |       | AJ H.3 0.3T    |
 | $H^+   + H_2 + e \to 3H$                           | MAR via $H_2^+$, cold $H_2$            | AJ H.4 3.2.3r   |       | Y    |                 | N     |                |
 | $H^-   + e       \to H + 2e$                       | $H^-$ izn                              | HH H.2 7.1.1    |       |      | Y (Holm claims) |       |                |
 | $H^+ + H^- \to H^+ + H(n=2) + e$                   |                                        | HH H.3 7.2.2    |       |      | Y (Holm claims) |       |                |
@@ -97,7 +98,7 @@ Further discussion in Zhou22, details on channels in Janev03
 ### MAD
 
 Several reactions involving $D_2^+$ and $D^-$ lead to the dissociation of molecules (MAD).
-MAD can result in an important source of neutral D atoms and plays a role in the power balance (section 4.3).
+MAD can result in an important source of neutral D atoms and plays a role in the power balance.
 
 ### MAR
 
