@@ -49,7 +49,7 @@ Refs:
 | $H_2   + e       \to 2H    + e$                    | (Neutral) Dissociation                   | AJ H.4 2.2.5g   | Y     | Y    | Y               | Y     | N              |
 | $H_2   + H^+     \to H_2^+ + H$                    | Molecular CX <br> / ion conversion       | AJ H.2 3.2.3    | Y     | Y    | Y               | Y     | N              |
 | $H_2^+ + e       \to 2H$                           | Dissociative <br>recombination ($H_2^+$) | AJ H.4 2.2.14   | Y     | Y    | Y               |       | N              |
-| $H_2^+ + e       \to H     + H^+ + e$              | Dissociative <br>excitation ($H_2^+$)    | AJ H.4 2.2.12   | Y     | Y    | Y               |       | N              |
+| $H_2^+ + e       \to H     + H^+ + e$              | Dissociation of $H_2^+$    | AJ H.4 2.2.12   | Y     | Y    | Y               |       | N              |
 | $H_2^+ + e       \to 2H^+  + 2e$                   | Dissociative <br>ionisation ($H_2^+$)    | AJ H.4 2.2.11   | Y     | Y    | Y               |       | N              |
 | $H^+   + H^-     \to 2H$                           | $H^-$ multistep CX recombination         | AJ H.4 7.2.3a   | Y     | N    | N               | Y     | N              |
 | $H^+   + H^-     \to H^+ + H + e$                  | Ionisation (with $H^−$)                  | AJ H.4 7.2.3b   | Y     | N    | N               | Y     | N              |
