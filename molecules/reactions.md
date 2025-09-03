@@ -131,3 +131,8 @@ Possibly irrelevant though; Kobussen25 (for example; appendix C) seem to derive 
 | MAR via $H_2^+$ (cold $H_2$) | 3.2.3r  | $H^2(+ e) + H^+ \to 3H$              | Lots of caveats! Check AJ pdf.                             |
 
 All involve " $H^2$ multistep models ".
+
+
+### Mass rescaling of rates
+
+$\langle\sigma v \rangle_D = \langle\sigma v \rangle_H(T/2)$
