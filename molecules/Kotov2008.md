@@ -16,7 +16,7 @@
 
 ### Molecular
 
-| Reaction                               | Comment                                 | Source        | Notes                                                         | Data in repo |
+| Reaction                               | Description                             | Source        | Notes                                                         | Data in repo |
 | -------------------------------------- | --------------------------------------- | ------------- | ------------------------------------------------------------- | ------------ |
 | $D_2   + e       \to D_2^+ + 2e$       | Non-dissociative izn                    | AJ H.4 2.2.9  | Kotov says AJ H.4 2.1.9; doesn't seem to exist                | Y            |
 | $D_2   + e       \to 2D    + e$        | Dissociation                            | AJ H.4 2.2.5g | Kotov says AJ H.4 2.1.5g; doesn't seem to exist               | Y            |
@@ -28,3 +28,14 @@
 | $D_2   + D^+     \to D_2 + D^+$        | Elastic collisions                      | AJ H.0 0.3T   | H.0 data not needed for fluid codes?                          | N            |
 |                                        |                                         | AJ H.1 0.3T   | H.1 data not needed for fluid codes?                          | N            |
 |                                        |                                         | AJ H.2 0.3T   |                                                               | Y            |
+
+#### Additional Molecular (Holm, 2022)
+
+Holm claims some additional reactions are included in Kotov 08. He cites PPCP 50 (2008) 105012, but I can't see them mentioned in that paper, or in the EIRENE docs.
+
+| Reaction                            | Description                         | Source        | Notes | Data in repo |
+| ----------------------------------- | ----------------------------------- | ------------- | ----- | ------------ |
+| $D_2  + e  \to D    + D^-$          | Dissociation of H2 with e-capture?? | AJ H.2 2.2.17 |       |              |
+| $D^− + e   \to D    + 2e$           | Ionisation of $D^-$                 | HH H.2 7.1.1  |       |              |
+| $D^+ + D^− \to D^+  + D(n = 2) + e$ | ??                                  | HH H.3 7.2.2  |       |              |
+| $D^+ + D^− \to D^+  + D(n = 3) + e$ | ??                                  | HH H.2 7.2.3  |       |              |
