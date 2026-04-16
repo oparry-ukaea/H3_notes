@@ -29,6 +29,10 @@
 |                                        |                                         | AJ H.1 0.3T   | H.1 data not needed for fluid codes?                          | N            |
 |                                        |                                         | AJ H.2 0.3T   |                                                               | Y            |
 
+**MAR** channel:
+- Molecular CX removes $D^+$, produces $D_2^+$
+- Dissociative recombination converts $D_2^+$ to $D$
+
 #### Additional Molecular (Holm, 2022)
 
 Holm claims some additional reactions are included in Kotov 08. He cites PPCP 50 (2008) 105012, but I can't see them mentioned in that paper, or in the EIRENE docs.
