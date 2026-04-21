@@ -19,24 +19,20 @@ Note from Amjuel docs on H.1:
 
 Reactions listed in Kotov08:
 
-| Reaction                               | Description                             | Source        | Notes                                                         | Data in repo |
-| -------------------------------------- | --------------------------------------- | ------------- | ------------------------------------------------------------- | ------------ |
-| $H_2   + e       \to H_2^+ + 2e$       | Non-dissociative izn                    | AJ H.4 2.2.9  | Kotov says AJ H.4 2.1.9; doesn't seem to exist                | Y            |
-| $H_2   + e       \to 2D    + e$        | Dissociation                            | AJ H.4 2.2.5g | Kotov says AJ H.4 2.1.5g; doesn't seem to exist               | Y            |
-| $H_2   + e       \to H     + H^+ + 2e$ | Dissociative izn                        | AJ H.4 2.2.10 | Kotov says  AJ H.4 2.1.10; doesn't seem to exist              | Y            |
-| $H_2   + H^+     \to H_2^+ + H$        | Molecular CX / 'ion conversion'         | AJ H.2 3.2.3  | $\langle \sigma.v\rangle(T)$; assumption: $T = T_{H^+} = T_e$ | Y            |
-| $H_2^+ + e       \to 2D$               | Dissociative recombination (of $H_2^+$) | AJ H.4 2.2.14 |                                                               | Y            |
-| $H_2^+ + e       \to H     + H^+ + e$  | Dissociative excitation (of $H_2^+$)    | AJ H.4 2.2.12 |                                                               | Y            |
-| $H_2^+ + e       \to 2D^+  + 2e$       | Dissociative izn (of $H_D^+$)           | AJ H.4 2.2.11 |                                                               | Y            |
-| $H_2   + H^+     \to H_2 + H^+$        | Elastic collisions                      | AJ H.0 0.3T   | H.0 data not needed for fluid codes?                          | N            |
-|                                        |                                         | AJ H.1 0.3T   | H.1 data not needed for fluid codes?                          | N            |
-|                                        |                                         | AJ H.2 0.3T   |                                                               | Y            |
+| Kotov notation | Reaction                               | Description                              | Source        | Notes                                                         | Data in repo |
+| -------------- | -------------------------------------- | ---------------------------------------- | ------------- | ------------------------------------------------------------- | ------------ |
+| $S_{H_2}$      | $H_2   + e       \to H_2^+ + 2e$       | Non-dissociative izn                     | AJ H.4 2.2.9  | Kotov says AJ H.4 2.1.9; doesn't seem to exist                | Y            |
+| $D_{H_2}$      | $H_2   + e       \to 2D    + e$        | Dissociation                             | AJ H.4 2.2.5g | Kotov says AJ H.4 2.1.5g; doesn't seem to exist               | Y            |
+| $I_{H_2}$      | $H_2   + e       \to H     + H^+ + 2e$ | Dissociative izn                         | AJ H.4 2.2.10 | Kotov says  AJ H.4 2.1.10; doesn't seem to exist              | Y            |
+|                | $H_2   + H^+     \to H_2^+ + H$        | Molecular CX / 'ion conversion'          | AJ H.2 3.2.3  | $\langle \sigma.v\rangle(T)$; assumption: $T = T_{H^+} = T_e$ | Y            |
+| $R_{H_2^+}$    | $H_2^+ + e       \to 2D$               | Dissociative recombination (of $H_2^+$)  | AJ H.4 2.2.14 |                                                               | Y            |
+| $D_{H_2^+}$    | $H_2^+ + e       \to H     + H^+ + e$  | Dissociative excitation (of $H_2^+$)$^*$ | AJ H.4 2.2.12 |                                                               | Y            |
+| $S_{H_2^+}$    | $H_2^+ + e       \to 2D^+  + 2e$       | Dissociative izn (of $H_D^+$)            | AJ H.4 2.2.11 |                                                               | Y            |
+|                | $H_2   + H^+     \to H_2 + H^+$        | Elastic collisions                       | AJ H.0 0.3T   | H.0 data not needed for fluid codes?                          | N            |
+|                |                                        |                                          | AJ H.1 0.3T   | H.1 data not needed for fluid codes?                          | N            |
+|                |                                        |                                          | AJ H.2 0.3T   |                                                               | Y            |
 
-Differences in Kotov thesis:
-
-| Reaction                              | Description             | Source        | Notes                                              | Data in repo |
-| ------------------------------------- | ----------------------- | ------------- | -------------------------------------------------- | ------------ |
-| $H_2^+ + e       \to H     + H^+ + e$ | Dissociation of $H_2^+$ | AJ H.4 2.2.12 | This replaces Dissociative excitation (of $H_2^+$) | Y            |
+$^*$ In Kotov's thesis he calls this "Dissociation of $H_2^+$". At least I think it's a straight swap - the data reference is the same, but the reaction string is recorded as $H_2^+ + e \to H + H^+ + e$, but that doesn't conserve charge.
 
 ### Additional Molecular (Holm, 2022)
 
@@ -60,6 +56,8 @@ Holm claims some additional reactions are included in Kotov 08. He cites PPCP 50
   - Dissociative recombination converts $H_2^+$ to $H$
 
 ## Sanity check against Kotov thesis equations
+
+Assuming 
 
 Check that all terms in Eqn 3.48 from Kotov thesis are accounted for by standard population change model:
 $$
