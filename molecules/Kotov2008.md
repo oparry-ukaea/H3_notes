@@ -1,11 +1,6 @@
-# Kotov 2008
+# Kotov 2008 mechanism
 
-- $H_2^+$ only, no $H^-$ or $H_3^+$
-
-
-## Mechanism
-
-### Atomic
+## Atomic
 
 | Reaction                       | Comment                    | Source        | Notes                                                                                              | Data in repo |
 | ------------------------------ | -------------------------- | ------------- | -------------------------------------------------------------------------------------------------- | ------------ |
@@ -20,7 +15,7 @@
 Note from Amjuel docs on H.1:
     "Collision cross [sections] are functions of relative velocity, but, due to historic reasons in the EIRENE databases, which initially had been built on data of ref. [2], the laboratory energy of one of the colliding particles (usually the charged particle) is used, with the second collision partner (usually the neutral particle) being at rest. I.e., $\sigma=\sigma(E{lab,1})$. To convert to center of mass energies, or to other isotopes of the same atom, one uses $E{lab,1}=m_1/(2 v_1^2)$  1 and $E_{CM}=\mu/2v_{rel}^2$ with $\mu=m_1m_2/(m_1+m_2)$ being the reduced mass and $v_{rel}=|v_1-v_2|$ the relative collision velocity."
 
-### Molecular
+## Molecular
 
 Reactions listed in Kotov08:
 
@@ -43,14 +38,7 @@ Differences in Kotov thesis:
 | ------------------------------------- | ----------------------- | ------------- | -------------------------------------------------- | ------------ |
 | $H_2^+ + e       \to H     + H^+ + e$ | Dissociation of $H_2^+$ | AJ H.4 2.2.12 | This replaces Dissociative excitation (of $H_2^+$) | Y            |
 
-**MAR** channel:
-- Molecular CX removes $H^+$, produces $H_2^+$
-- Dissociative recombination converts $H_2^+$ to $H$
-
-### In thesis
-
-
-#### Additional Molecular (Holm, 2022)
+### Additional Molecular (Holm, 2022)
 
 Holm claims some additional reactions are included in Kotov 08. He cites PPCP 50 (2008) 105012, but I can't see them mentioned in that paper, or in the EIRENE docs.
 
@@ -60,3 +48,26 @@ Holm claims some additional reactions are included in Kotov 08. He cites PPCP 50
 | $H^− + e   \to H    + 2e$           | Ionisation of $H^-$                 | HH H.2 7.1.1  |       |              |
 | $H^+ + H^− \to H^+  + H(n = 2) + e$ | ??                                  | HH H.3 7.2.2  |       |              |
 | $H^+ + H^− \to H^+  + H(n = 3) + e$ | ??                                  | HH H.2 7.2.3  |       |              |
+
+## Characteristics and assumptions:
+
+- $H_2^+$ only, no $H^-$ or $H_3^+$
+- CRM (Amjuel rates??) doesn't take collisions between heavy particles into account, CX or elastic collisions - assumes lifetimes of excited states is shorter than the timescales of such collisions
+- Only H.4 2.2.5g and H.2 3.2.3 take vibrationally excited states into account
+- Rotational excitation neglected
+- **MAR** takes place via
+  - Molecular CX removes $H^+$, produces $H_2^+$
+  - Dissociative recombination converts $H_2^+$ to $H$
+
+## Sanity check against Kotov thesis equations
+
+Check that all terms in Eqn 3.48 from Kotov thesis are accounted for by standard population change model:
+$$
+\begin{align}
+    \frac{dn_{H_2}}{dt}   &= -(D_{H_2} + S_{H_2} + I_{H_2})n_e n_{H_2}\\
+    \frac{dn_{H_2^+}}{dt} &= S_{H_2} n_e n_{H_2} - (R_{H_2^+} + D_{H_2^+} + S_{H_2^+})n_e n_{H_2^+}\\
+    \frac{dn_H}{dt}       &= (2D_{H_2} + I_{H_2^+})n_e n_{H_2} + (2R_{H_2^+} + D_{H_2^+})n_e n_{H_2^+} - I_H n_e n_H + R_H n_e n_{H+}\\
+    \frac{dn_{H^+}}{dt}   &= I_{H_2} n_e n_{H_2} + (D_{H_2^+} + 2S_{H_2^+})n_e n_{H_2^+} + I_H n_e n_H - R_H n_e n_{H+}
+\end{align}
+$$
+
