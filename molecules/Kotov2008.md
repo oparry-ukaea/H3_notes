@@ -22,17 +22,18 @@ Reactions listed in Kotov08:
 | Kotov notation | Reaction                               | Description                              | Source        | Notes                                                         | Data in repo |
 | -------------- | -------------------------------------- | ---------------------------------------- | ------------- | ------------------------------------------------------------- | ------------ |
 | $S_{H_2}$      | $H_2   + e       \to H_2^+ + 2e$       | Non-dissociative izn                     | AJ H.4 2.2.9  | Kotov says AJ H.4 2.1.9; doesn't seem to exist                | Y            |
-| $D_{H_2}$      | $H_2   + e       \to 2D    + e$        | Dissociation                             | AJ H.4 2.2.5g | Kotov says AJ H.4 2.1.5g; doesn't seem to exist               | Y            |
+| $D_{H_2}$      | $H_2   + e       \to 2H    + e$        | Dissociation                             | AJ H.4 2.2.5g | Kotov says AJ H.4 2.1.5g; doesn't seem to exist               | Y            |
 | $I_{H_2}$      | $H_2   + e       \to H     + H^+ + 2e$ | Dissociative izn                         | AJ H.4 2.2.10 | Kotov says  AJ H.4 2.1.10; doesn't seem to exist              | Y            |
 |                | $H_2   + H^+     \to H_2^+ + H$        | Molecular CX / 'ion conversion'          | AJ H.2 3.2.3  | $\langle \sigma.v\rangle(T)$; assumption: $T = T_{H^+} = T_e$ | Y            |
-| $R_{H_2^+}$    | $H_2^+ + e       \to 2D$               | Dissociative recombination (of $H_2^+$)  | AJ H.4 2.2.14 |                                                               | Y            |
+| $R_{H_2^+}$    | $H_2^+ + e       \to 2H$               | Dissociative recombination (of $H_2^+$)  | AJ H.4 2.2.14 |                                                               | Y            |
 | $D_{H_2^+}$    | $H_2^+ + e       \to H     + H^+ + e$  | Dissociative excitation (of $H_2^+$)$^*$ | AJ H.4 2.2.12 |                                                               | Y            |
-| $S_{H_2^+}$    | $H_2^+ + e       \to 2D^+  + 2e$       | Dissociative izn (of $H_D^+$)            | AJ H.4 2.2.11 |                                                               | Y            |
+| $S_{H_2^+}$    | $H_2^+ + e       \to 2H^+  + 2e$       | Dissociative izn (of $H_D^+$)            | AJ H.4 2.2.11 |                                                               | Y            |
 |                | $H_2   + H^+     \to H_2 + H^+$        | Elastic collisions                       | AJ H.0 0.3T   | H.0 data not needed for fluid codes?                          | N            |
 |                |                                        |                                          | AJ H.1 0.3T   | H.1 data not needed for fluid codes?                          | N            |
 |                |                                        |                                          | AJ H.2 0.3T   |                                                               | Y            |
 
 $^*$ In Kotov's thesis he calls this "Dissociation of $H_2^+$". At least I think it's a straight swap - the data reference is the same, but the reaction string is recorded as $H_2^+ + e \to H + H^+ + e$, but that doesn't conserve charge.
+
 
 ### Additional Molecular (Holm, 2022)
 
@@ -60,12 +61,3 @@ Holm claims some additional reactions are included in Kotov 08. He cites PPCP 50
 Assuming 
 
 Check that all terms in Eqn 3.48 from Kotov thesis are accounted for by standard population change model:
-$$
-\begin{align}
-    \frac{dn_{H_2}}{dt}   &= -(D_{H_2} + S_{H_2} + I_{H_2})n_e n_{H_2}\\
-    \frac{dn_{H_2^+}}{dt} &= S_{H_2} n_e n_{H_2} - (R_{H_2^+} + D_{H_2^+} + S_{H_2^+})n_e n_{H_2^+}\\
-    \frac{dn_H}{dt}       &= (2D_{H_2} + I_{H_2^+})n_e n_{H_2} + (2R_{H_2^+} + D_{H_2^+})n_e n_{H_2^+} - I_H n_e n_H + R_H n_e n_{H+}\\
-    \frac{dn_{H^+}}{dt}   &= I_{H_2} n_e n_{H_2} + (D_{H_2^+} + 2S_{H_2^+})n_e n_{H_2^+} + I_H n_e n_H - R_H n_e n_{H+}
-\end{align}
-$$
-
