@@ -9,7 +9,7 @@
 |                                |                            | AJ H.10 2.1.8 |                                                                                                    | Y            |
 | $H^+   + 2e  \to H     + e$    | Recombination (three body) | AJ H.4 2.1.8, |                                                                                                    | Y            |
 |                                |                            | AJ H.10 2.1.8 |                                                                                                    | Y            |
-| $H^+   + H   \to H     + H^+$  | Charge exchange            | HH H.1 3.1.8  | Differs from H3 default. H.1 is $\sigma(E_{lab,1})$; H.3 (p165) is $\langle \sigma.v\rangle(T,E)$. | N            |
+| $H^+   + H   \to H     + H^+$  | Charge exchange            | HH H.1 3.1.8  | Differs from CX default. H.1 is $\sigma(E_{lab,1})$; H.3 (p165) is $\langle \sigma.v\rangle(T,E)$. | N            |
 |                                |                            | HH H.3 3.1.8  | Presumably electron quantities??                                                                   | N            |
 
 Note from Amjuel docs on H.1:
